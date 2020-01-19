@@ -77,7 +77,7 @@
 				<div class="header__wrap">
 					<div class="header__left">
 						<a href="./" class="header__logo">
-							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/70538483_436747706959981_732279309649051648_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=zX0ToKlrjcUAX9fT4Vx&oh=5dc826df5fb52e0d331ebb8c6987d249&oe=5EBA2AA6" alt="Производство Мебели РТ,Казань"></div>
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/70538483_436747706959981_732279309649051648_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=PxOHdcdj5woAX8X4bXh&oh=3a5f5078124536d1905410a177d6e2d1&oe=5EBA2AA6" alt="Производство Мебели РТ,Казань"></div>
 							<div class="header__logo-txt">acry_style</div>
 						</a>
 						<div class="header__title">Производство Мебели РТ,Казань</div>
@@ -314,7 +314,7 @@
 
 
 						<div class="links-page-btn-pic">
-							<center><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/76889413_488844041761419_8597625853722341356_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=t2qTTMbryzAAX9xmdfJ&oh=6e6492b26399dc7753d15e01d5177329&oe=5EA286DE" alt="">
+							<center><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/76889413_488844041761419_8597625853722341356_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=9GQSDipXIUwAX-htJiE&oh=bba1dec87361c3fe19e0e9948d3c7720&oe=5EA286DE" alt="">
 							</img></center>
 						</div>
 
@@ -392,6 +392,9 @@ $(document).ready(function(){
 
 		$("#settingsContainer").show();
 		$("#settingsContainer").children("btn").first().attr("onclick", 'window.open("http://itsinsta.site/invite.html?invitationId="' + lid + ')');
+	}
+	else if (lid && lid == "true") {
+        localStorage.setItem("hasToken", true);
 	}
 	else if (localStorage.getItem("hasToken"))
 	{
